@@ -157,7 +157,7 @@ The template provides several predefined graphs:
 1.  Import the template into your Zabbix server.
 2.  Link the template to the host representing your Pi-hole instance.
 3.  Configure the User Macros on the host:
-    * `{$PIHOLE.API.URL}`: Set this to your Pi-hole API endpoint (e.g., `http://pi.hole/admin/api.php` or `http://<your-pihole-ip>/admin/api.php` if using the older API, or the new API format `<scheme>://<host/fqdn>:<port>/api` as per the macro description).
+    * `{$PIHOLE.API.URL}`: Set this to your Pi-hole API endpoint (the new API format `<scheme>://<host/fqdn>:<port>/api` as per the macro description).
     * `{$PIHOLE.PASSWORD}`: Set this to your Pi-hole web interface password.
 4.  Adjust other macros like `{$PIHOLE.SYSTEM.CPU.MAX.WARN}` if needed.
 5.  Allow some time for Zabbix to start collecting data.
